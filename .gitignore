@@ -1,0 +1,22 @@
+dist/
+
+.env
+.env.test
+.env.production
+.env.production.example
+
+node_modules/
+
+# BACKEND
+backend/node_modules
+backend/dist
+backend/logs
+
+
+# FRONTEND
+frontend/node_modules
+frontend/dist
+
+
+
+logs/

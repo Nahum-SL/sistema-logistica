@@ -1,0 +1,34 @@
+{
+  "name": "sistema-logistica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter ./backend dev",
+    "dev:frontend": "pnpm --filter ./frontend dev",
+    "test": "pnpm --filter ./backend test",
+    "typecheck": "pnpm --filter ./backend typecheck",
+    "lint:all": "pnpm --filter ./frontend lint",
+    "build:all": "pnpm --filter ./backend build && pnpm --filter ./frontend build",
+    "start": "pnpm --filter ./backend start",
+    "migrate:latest": "pnpm --filter ./backend migrate:latest",
+    "seed:run": "pnpm --filter ./backend seed:run",
+    "migrate:prod": "pnpm --filter ./backend migrate:prod",
+    "seed:prod": "pnpm --filter ./backend seed:prod",
+    "backup:db": "pnpm --filter ./backend backup:db",
+    "typecheck:test": "tsc -p tsconfig.test.json",
+    "smoke": "pnpm --filter ./backend smoke"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.16.1",
+  "type": "module"
+}
